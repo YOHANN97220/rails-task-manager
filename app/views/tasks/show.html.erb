@@ -1,7 +1,8 @@
 <h1>My tasks</h1>
-<h2><%= @tasks.title  %></h2>
-<p><%= @tasks.details %></p>
-<p><%= @tasks.completed %></p>
+<h2><%= @task.title  %></h2>
+<p><%= @task.details %></p>
+<p><%= @task.completed %></p>
+<p> <%= link_to 'Edit ', edit_task_path(@task) %></p>
+<%= link_to "Destroy", task_path(@task), method: :delete %>
 <p><%= link_to 'Back to the list', tasks_path %></p>
-
 
